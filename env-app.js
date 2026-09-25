@@ -272,7 +272,7 @@ geocodeOnce({keyword: (firstAddress), type: govmap.geocodeType.AccuracyOnly}
         var rows = [];
         $.each(response.data, function(index, obj) {
           var roundedDistance = Math.round(obj.distance / 10) * 10;
-          rows.push($('<tr><td>' + obj.Fields[1].Value  + '</td><td>' + roundedDistance + '</td></tr>'));
+          rows.push($('<tr><td>' + obj.Fields[0].Value  + '</td><td>' + roundedDistance + '</td></tr>'));
         });
         rows.sort(function(a, b) {
           return parseFloat(a.children().last().text()) - parseFloat(b.children().last().text());
