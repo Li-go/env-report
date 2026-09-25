@@ -65,7 +65,7 @@ govmap.geocode({ keyword: firstAddress, type: govmap.geocodeType.AccuracyOnly })
 
     if (points.length === 0) {
         alert("לא נמצאו כתובת או זיהוי רלוונטי");
-        document.getElementById('loading').style.display = 'none';
+        document.getElementById('loading').style.display = 'none'; 
         return;
     }
 
