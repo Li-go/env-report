@@ -2,7 +2,7 @@
     if (!document.getElementById('env-app')) return;
     window.$ = window.$ || $;
     var s = document.createElement('script');
-    s.src = 'https://www.govmap.gov.il/govmap/api/govmap.api.js';
+    s.src = 'https://www.govmap.gov.il/govmap/api/govmap.api.js'; 
     s.onload = function () {
         govmap.createMap('map', {
             token: '21319be6-2280-46f3-8a46-1f4439416985',
